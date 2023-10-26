@@ -1,0 +1,139 @@
+.Callpage-item{
+  height: 97vh;
+  display: flex;
+  flex-direction: column;
+}
+.profile-pic{
+  height: 90%;
+}
+.ignore{
+  text-align: center;
+}
+.text{
+  text-align:center;
+  font-size: 25px;
+}
+.footer-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.ficons{
+  padding:15px;
+  margin-right: 15px;
+ font-size: 15px;
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.Container {
+  display: flex;
+  flex-direction: row;
+  height: 96vh;
+  width: 100%;
+  justify-content: stretch; /* Updated */
+  align-items: center;
+ 
+}
+
+.videos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.Controls {
+  display: flex;
+  margin: 3px;
+padding: 5px;
+height: 27px;
+width: 98%;
+margin-top: -8.5vh;
+filter: brightness(1);
+z-index: 1;
+border-radius: 6px;
+flex: auto;
+flex-direction: row;
+justify-content: center;
+}
+
+.ControlSmall {
+  margin: 3px;
+padding: 5px;
+height: 16px;
+width: 98%;
+margin-top: -6vh;
+filter: brightness(1);
+z-index: 1;
+border-radius: 6px;
+display: flex;
+justify-content: center;
+}
+
+.ImgComponent {
+  display: flex;
+  cursor: pointer;
+  height: 25px;
+  align-items: center;
+  width: fit-content;
+}
+
+.ImgComponentSmall {
+  height: 15px;
+text-align: left;
+opacity: 0.5;
+}
+
+.StyledVideo {
+  width: 100%;
+  height: fit-content;
+position: relative;
+border-radius: 10px;
+overflow: hidden;
+border: 3px solid gray;
+margin-top: 10px;
+margin-bottom: 10px;
+
+}
+
+.name{
+  justify-self: end;
+  font-size: medium;
+}
+
+.VideoContainer {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 23%;
+height: fit-content;
+margin-left: 10px;
+margin-right: 10px;
+}
+
+.VideoContainer2 {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 23%;
+height: fit-content;
+margin-left: 10px;
+margin-right: 10px;
+margin-top: 6px;
+}
+
+.Chat {
+  width: 300px;
+  height: 96vh;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+}

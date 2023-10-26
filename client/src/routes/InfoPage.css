@@ -1,0 +1,84 @@
+.info-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  .developer-card {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(232, 78, 204, 0.1);
+    border-radius: 6px;
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .developer-card h2 {
+    margin-top: 0;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .developer-card p {
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  .developer-card p strong {
+    font-weight: bold;
+    color: #333;
+  }
+
+  .developer-card p.contact {
+    line-height: 1.5;
+  }
+  
+  .info-page {
+    background-color: #f8f8f8;
+  }
+  
+  .info-page h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .developer-card {
+    border: 2px solid #dddddd;
+  }
+  
+  .developer-card h2 {
+    color: #333;
+  }
+  
+  .developer-card p.contact {
+    color: #555;
+  }
+
+  .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(204, 12, 214);
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  width: 15%;
+}
+
+.button:hover {
+  background-color: rgba(204, 12, 214, 0.766);
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:active {
+  background-color: rgba(204, 12, 214, 0.34);
+}
