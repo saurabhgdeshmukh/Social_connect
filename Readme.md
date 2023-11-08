@@ -24,6 +24,7 @@ Profile page
 ![Profile view](https://github.com/saurabhgdeshmukh/Social_connect/assets/128806572/4ae58fd3-4901-4a32-bda4-5b3ee887b86f)
 
 Dark mode
+![Dark mode](https://github.com/saurabhgdeshmukh/Social_connect/assets/128806572/066914c7-4a2a-42ba-bc1a-2d32de2952ef)
 
 
 
@@ -61,4 +62,3 @@ Starting the application
 
 
 
-![Dark mode](https://github.com/saurabhgdeshmukh/Social_connect/assets/128806572/066914c7-4a2a-42ba-bc1a-2d32de2952ef)
