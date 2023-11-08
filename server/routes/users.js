@@ -1,4 +1,5 @@
-import { Express } from "express";
+import express from 'express';
+//const { express } = pkg;
 import{
     getUser,
     getUserFriends,

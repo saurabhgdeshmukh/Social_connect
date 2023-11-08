@@ -17,7 +17,7 @@ import { verifyToken } from "./middleware/auth.js";
 import User from "./models/User.js";
 import Post from "./models/Post.js";
 import { users, posts } from "./data/index.js";
-
+ // https://www.npmjs.com/package/luxon
 /* CONFIGURATIONS */
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -54,8 +54,7 @@ app.use("/posts", postRoutes);
 
 /* MONGOOSE SETUP */
 const PORT = process.env.PORT || 6001;
-mongoose
-  .connect(process.env.MONGO_URL, {
+mongoose.connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
@@ -63,7 +62,7 @@ mongoose
     app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
 
     
-     User.insertMany(users);
+    User.insertMany(users);
      Post.insertMany(posts);
   })
   .catch((error) => console.log(`${error} did not connect`));

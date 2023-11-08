@@ -1,14 +1,42 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import { GoogleOAuthProvider } from "@react-oauth/google";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import authReducer from "./state";
+import { configureStore } from "@reduxjs/toolkit";
+import { Provider } from "react-redux";
+import {
+  persistStore,
+  persistReducer,
+  FLUSH,
+  REHYDRATE,
+  PAUSE,
+  PERSIST,
+  PURGE,
+  REGISTER,
+} from "redux-persist";
+import storage from "redux-persist/lib/storage";
+import { PersistGate } from "redux-persist/integration/react";
 
-ReactDOM.render(
+const persistConfig = { key: "root", storage, version: 1 };
+const persistedReducer = persistReducer(persistConfig, authReducer);
+const store = configureStore({
+  reducer: persistedReducer,
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: {
+        ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+      },
+    }),
+});
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
   <React.StrictMode>
-  
-  <GoogleOAuthProvider clientId ={"978568787969-t6hihuo1k4ifro5ll704h7sbc7laqct1.apps.googleusercontent.com"}>
-    <App />
-    </GoogleOAuthProvider>
-  </React.StrictMode>,
-  document.getElementById('root')
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistStore(store)}>
+        <App />
+      </PersistGate>
+    </Provider>
+  </React.StrictMode>
 );
