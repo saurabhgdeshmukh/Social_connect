@@ -58,6 +58,6 @@ Profile page
 ![Profile view](https://github.com/saurabhgdeshmukh/Social_connect/assets/128806572/4ae58fd3-4901-4a32-bda4-5b3ee887b86f)
 
 Home Page
-
+https://user-images.githubusercontent.com/128806572/281500884-14e7f18d-cb0b-4d19-8105-df48b23276d4.png
 
 Dark mode
