@@ -57,7 +57,7 @@ Starting the application
 
 ```bash
   // client terminal  
-  npm start
+  npm start.
 ```
 
 
